@@ -89,3 +89,35 @@ function reverseLetter(str) {
     console.log(reversed)
   }
   reverseLetter('hey!now?')
+
+
+  //Count the number of divisors of a positive integer n.
+  // Random tests go up to n = 500000.
+  // Examples (input --> output)
+  // 4 --> 3 (1, 2, 4)
+  // 5 --> 2 (1, 5)
+  // 12 --> 6 (1, 2, 3, 4, 6, 12)
+  // 30 --> 8 (1, 2, 3, 5, 6, 10, 15, 30)
+function getDivisorsCnt(n){
+    // todo
+  let divisors = 0
+  for(let i = 1; i <= n; i++){
+    if(n % i === 0){
+      divisors += 1
+    }
+  }
+  return divisors
+}
+
+//You will be given an array and a limit value. You must check that all values in the 
+//array are below or equal to the limit value. If they are, return true. Else, return false.
+//You can assume all values in the array are numbers.
+function smallEnough(a, limit){
+  let result = a.every(function(e){
+		  return e <= limit;
+});
+  return result;
+}
+smallEnough([66, 101], 200)
+smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100)
+smallEnough([101, 45, 75, 105, 99, 107], 107)
