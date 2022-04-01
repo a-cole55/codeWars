@@ -121,3 +121,31 @@ function smallEnough(a, limit){
 smallEnough([66, 101], 200)
 smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100)
 smallEnough([101, 45, 75, 105, 99, 107], 107)
+
+
+
+// Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+// Examples input/output:
+// XO("ooxx") => true
+// XO("xooxx") => false
+// XO("ooxXm") => true
+// XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
+// XO("zzoo") => false
+function XO(str) {
+  //code here
+let countX = 0;
+let countO = 0;
+for (let i = 0; i < str.length; i++){
+  if (str.charAt(i).toLowerCase() === "x"){
+    countX += 1;
+  } else if (str.charAt(i).toLowerCase() === "o"){
+    countO += 1;}
+  } if (countX === countO){
+  return true
+  } else {
+  return false}
+}
+XO("xxOo");
+XO("xxxm");
+XO("Oo");
+XO("ooom");
