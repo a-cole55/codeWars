@@ -15,6 +15,9 @@ def array_diff(a, b):
         i += 1
     return a
 
+#or
+#return [value for value in a if value not in b]
+
 
 array_diff([1,2], [1]) #[2], "a was [1,2], b was [1], expected [2]")
 array_diff([1,2,2], [1]) #[2,2], "a was [1,2,2], b was [1], expected [2,2]")
