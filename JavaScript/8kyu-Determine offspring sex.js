@@ -10,4 +10,4 @@ function chromosomeCheck(sperm) {
     return sperm.toLowerCase().includes("y") ? "Congratulations! You're going to have a son." : "Congratulations! You're going to have a daughter."
 }
 chromosomeCheck('XY') //"Congratulations! You're going to have a son.")
-Test.assertEquals(chromosomeCheck('XX') //"Congratulations! You're going to have a daughter.")
+chromosomeCheck('XX') //"Congratulations! You're going to have a daughter.")
