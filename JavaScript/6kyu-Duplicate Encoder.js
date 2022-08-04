@@ -14,12 +14,14 @@
 
 function duplicateEncode(word){
     // ...
-  let lowercase = word.toLowerCase()
-  let wordArr = lowercase.split('');
+  console.log(word)
+  let lower = word.toLowerCase();
+  let wordArr = lower.split('');
+  console.log(wordArr)
   const countArr = wordArr.map((ele) => {
     let count = 0;
     for(let i=0; i < word.length; i++){
-      if(ele === word[i]){
+      if(ele === lower[i]){
         count += 1
       }
     }
@@ -29,6 +31,7 @@ function duplicateEncode(word){
       return ")"
     }
   })
+  console.log(countArr)
   return countArr.join("")
 }
 
