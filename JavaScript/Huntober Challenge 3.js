@@ -4,7 +4,7 @@
 
 
 function sumMix(arr){
-    return arr.map((ele) => Number(ele)).reduce((acc, cum) => acc + cum)
+    return arr.reduce((acc, cum) => acc + Number(cum)
 }
 sumMix([9, 3, '7', '3']) //22);
 // sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]), 42); 
