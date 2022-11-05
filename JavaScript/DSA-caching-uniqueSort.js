@@ -1,4 +1,4 @@
-//bind the unique values in an array and then sort
+//find the unique values in an array and then sort
 
 function uniqSort(arr){
   
