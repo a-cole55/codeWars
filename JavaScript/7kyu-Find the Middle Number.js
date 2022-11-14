@@ -14,9 +14,8 @@
 
 
 function gimme(arr){
-    let sortedCopy = [...arr].sort((a,b) => a - b);
-    let midVal = sortedCopy[1];
-    return arr.indexOf(midVal)
+  let midVal = [...arr].sort((a,b) => a - b)[1];
+  return arr.indexOf(midVal)
   }
   gimme([2, 3, 1]) //=> 0
   gimme([5, 10, 14]) //=> 1
